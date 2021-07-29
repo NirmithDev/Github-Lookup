@@ -77,6 +77,16 @@ body {
     border-radius: 10px;
 }
 
+.username{
+    font-size: 40px;
+}
+
+.images{
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+}
+
 /*Mobile responsiveness*/
 @media screen and (max-width:768px) {
     .outputContainer .outputs{
@@ -85,6 +95,13 @@ body {
     .outputContainer{
         height: 600px;
         margin-top: 12px;
+    }
+    .username{
+        font-size: 20px;
+    }
+    .images{
+        max-height: 150px;
+        max-width: 150px;
     }
 }
 
