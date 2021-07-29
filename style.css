@@ -60,9 +60,32 @@ body {
     border: 1px solid orangered;
 }
 
+.outputContainer{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    height: 700px;
+    /*background-color: brown*/
+}
+
+.outputContainer .outputs{
+    width: 80%;
+    text-align: center;
+    padding: 15px;
+    /*temporary will add opacity to it in a bit right now I am blind as a bat*/
+    background-color: black;
+    border-radius: 10px;
+}
+
 /*Mobile responsiveness*/
 @media screen and (max-width:768px) {
-    
+    .outputContainer .outputs{
+        width: 90%;
+    }
+    .outputContainer{
+        height: 600px;
+        margin-top: 12px;
+    }
 }
 
 /*nav{
