@@ -75,7 +75,6 @@
       .wrapper .left{
             width: 50%;
             height: 28vh;
-            margin: 20px;
       }
       .wrapper .right{
         width: 40%;
@@ -144,3 +143,10 @@
           height: 150px;
       }
 }
+
+@media screen and (min-width:1200px) {
+    .wrapper .left,.wrapper .right{
+        height: 27vh;
+    }
+}
+/*Convert all vh to px easier to design that way*/
