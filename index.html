@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Lookup</title>
-    <link href="./style.css" rel="stylesheet">
     <link rel="shortcut icon" href="./logo.png" type="image/x-icon">
+    <link href="./style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" referrerpolicy="no-referrer" />
 </head>
 <body>
@@ -36,25 +37,37 @@
     <div class="outputContainer">
         <div class="outputs">
             <!--Preferablly all caps-->
-            <p class="username">user name</p>
-            <div class="imageContainer" style="margin: 15px;">
-                <img class="images" src="./logo.png" alt="username logo">
+            <!--Left Container-->
+            <div class="wrapper">
+
+                <div class="side left">
+                      <div class="caption capt" >
+                        <!--Make the username capitalized-->
+                        <p class="username" style="color: white;">user name</p>
+                            <!--Same thing for this-->
+                            <div class="side left2">
+                                <div class="caption">
+                                        <a class="button" href="#">200 Followers</a>
+                                        
+                                </div>
+                                <div class="caption">
+                                        <a class="button" href="#">200 Following</a>
+                                </div>
+                            </div>    
+                      </div>
+                </div>
+    
+                <div class="side right">
+                    <div class="imageContainer" style="margin-top: 15px;">
+                        <img class="images" src="./logo.png" alt="username logo">
+                    </div>
+                </div>
             </div>
-            <!--Make the username capitalized-->
-            <p style="text-transform: uppercase;margin-top: 30px;"> Bio&nbsp;: &nbsp; <q>Cookies is Cookies just like A Pen is Pen</q></p>
+            <p style="text-transform: uppercase;margin-top: 30px;"> Bio&nbsp;: &nbsp; <q>Cookies is Cookies just like A Pen is Pen</q></p>            <!--            
+-->
             <!--2 Div Containers side by side for Followers and Following-->
             <!--TEST CONTAINERS FROM THE NET DO NOT MESS WITH IT-->
-            <div class="float-container">
-
-                <div class="float-child">
-                  <div class="green">Float Column 1</div>
-                </div>
-                
-                <div class="float-child">
-                  <div class="blue">Float Column 2</div>
-                </div>
-                
-              </div>
+            
         </div>
         
     </div>
