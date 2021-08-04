@@ -105,6 +105,30 @@ body {
     margin-right: 20px;
 }
 
+.repo_details{
+    height: 300px;
+    margin: 21px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    background-color: #80808054;
+    border-radius: 10px 0px;
+}
+
+.item{
+    width: 350px;
+    background-color: #ff000030;
+    height: 115px;
+    padding: 20px;
+    border-radius: 10px 0;
+    margin: 10px;
+    transition: 2s;
+}
+.item:hover{
+    background-color: rgb(158, 0, 0);
+}
+
 /*Mobile responsiveness*/
 @media screen and (max-width:768px) {
     .outputContainer .outputs{
@@ -115,11 +139,14 @@ body {
         margin-top: 12px;
     }
     .username{
-        font-size: 20px;
+        font-size: 41px;
     }
     .images{
         max-height: 150px;
         max-width: 150px;
+    }
+    .repo_details{
+        height: 400px;
     }
 }
 

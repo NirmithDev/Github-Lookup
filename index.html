@@ -38,8 +38,13 @@
         <div class="outputs">
             <!--Preferablly all caps-->
             <!--Left Container-->
-            <div class="wrapper" style="justify-content: space-around;">
+            <div class="wrapper" style="justify-content: space-evenly;">
 
+                <div class="side right">
+                    <div class="imageContainer" style="margin-top: 15px;">
+                        <img class="images" src="./logo.png" alt="username logo">
+                    </div>
+                </div>
                 <div class="side left">
                       <div class="caption capt" >
                         <!--Make the username capitalized-->
@@ -57,16 +62,32 @@
                       </div>
                 </div>
     
-                <div class="side right">
-                    <div class="imageContainer" style="margin-top: 15px;">
-                        <img class="images" src="./logo.png" alt="username logo">
-                    </div>
+                
+            </div>
+            <p class="bios"> Bio&nbsp;: &nbsp; <q>Cookies is Cookies just like A Pen is Pen</q></p>
+            <!--Containers for the pinned repos-->
+            <div class="repo">
+                <h1>Pinned Repos</h1>
+                <div class="repo_details">
+                    <!--Adding clickable properties test link "https://github.com/NirmithVictor/Report-Generator"-->
+                    <div class="item">
+                    1    <div class="repo_name">Repo Name</div>
+                        <!--Number of stars and forks make it clickable to the repo link-->
+                        <div style="padding: 20px;display: flex;justify-content: space-evenly;">
+                            <!--Stars-->
+                            <div class="star" style="padding: 10px;">
+                                <i class="far fa-star"></i>45
+                            </div>
+                            <!--Forks-->
+                            <div class="fork"  style="padding: 10px;">
+                                <i class="fas fa-code-branch"></i>24
+                            </div>
+                        </div>
+                    </div> 
+                    
                 </div>
             </div>
-            <p style="text-transform: uppercase;margin-top: 30px;"> Bio&nbsp;: &nbsp; <q>Cookies is Cookies just like A Pen is Pen</q></p>            <!--            
--->
-            <!--2 Div Containers side by side for Followers and Following-->
-            <!--TEST CONTAINERS FROM THE NET DO NOT MESS WITH IT-->
+
             
         </div>
         
@@ -76,3 +97,30 @@
 </body>
 <script src="./test.js"></script>
 </html>
+<!--<div class="item">
+                        <div class="repo_name">devAmit</div>
+                    </div> 
+                    <div class="item">
+                        <div class="repo_name">devAmit</div>
+                    </div> 
+                    <div class="item">
+                        <div class="repo_name">devAmit</div>
+                    </div>                    
+                    <div class="item">
+                        <div class="repo_name">devAmit</div>
+                    </div> 
+                    <div class="item">
+                        <div class="repo_name">devAmit</div>
+                    </div> -->
+
+<!--<div class="repo_details_">
+                            <div class="info_ star">
+                                <i class="fa fa-star-o"></i>10
+                            </div>
+                            <div class="info_ fork">
+                                <p><i class="fa fa-code-fork"></i>30</p>
+                            </div>
+                            <div class="info_ size">
+                                <p><i class="fa fa-file"></i>3000kb</p>
+                            </div>
+                        </div>-->

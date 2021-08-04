@@ -63,15 +63,16 @@
       letter-spacing: 0.05em;
 }
 
-
+.bios{
+    text-transform: uppercase;
+    margin: 30px;
+}
 
 @media screen and (min-width:1200px) {
 
       .wrapper {
             display: flex;
       }
-
-
       .wrapper .left{
             width: 50%;
             height: 28vh;
@@ -83,6 +84,9 @@
       .left2{
             flex-direction: row;
       }
+        .bios{
+            margin: 30px;
+        }
 }
 
 
@@ -103,6 +107,9 @@
           width: 100px;
           height: 100px;
       }
+      .bios{
+        margin: 30px;
+    }
 }
 
 
@@ -113,8 +120,11 @@
       .left2{
             flex-direction: column;
       }
-      .wrapper .left,.wrapper .right{
-        height: 27vh;
+      .wrapper .left{
+        height: 200px;
+      }
+      .wrapper .right{
+        height: 200px;
       }
       .capt{
           margin-bottom: 20px;
@@ -123,6 +133,9 @@
           width: 150px;
           height: 150px;
       }
+      .bios{
+        margin: 30px;
+        }
 }
 
 @media screen and (min-width:768px){
@@ -133,20 +146,24 @@
             flex-direction: column;
       }
       .wrapper .left,.wrapper .right{
-        height: 17vh;
-      }
-      .capt{
-          margin-bottom: 20px;
+        height: 200px;
       }
       .images{
           width: 150px;
           height: 150px;
       }
+      .bios{
+        margin: 0;
+        margin-bottom: 30px;
+        }
 }
 
 @media screen and (min-width:1200px) {
     .wrapper .left,.wrapper .right{
         height: 27vh;
+    }
+    .left2 {
+        flex-direction: row;
     }
 }
 /*Convert all vh to px easier to design that way*/
