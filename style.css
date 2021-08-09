@@ -116,6 +116,10 @@ body {
     border-radius: 10px 0px;
 }
 
+.follows_dets,.followings_dets{
+    height: 250px;
+}
+
 .item{
     width: 350px;
     background-color: #ff000030;
