@@ -105,7 +105,7 @@ body {
     margin-right: 20px;
 }
 
-.repo_details{
+.repo_details,.follows_dets{
     height: 300px;
     margin: 21px;
     display: flex;
@@ -129,6 +129,21 @@ body {
     background-color: rgb(158, 0, 0);
 }
 
+.images2{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.follows{
+    width: 300px;
+    height: 147px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
 /*Mobile responsiveness*/
 @media screen and (max-width:768px) {
     .outputContainer .outputs{
@@ -145,7 +160,7 @@ body {
         max-height: 150px;
         max-width: 150px;
     }
-    .repo_details{
+    .repo_details, .follows_dets{
         height: 400px;
     }
 }
