@@ -105,7 +105,7 @@ body {
     margin-right: 20px;
 }
 
-.repo_details,.follows_dets{
+.repo_details,.follows_dets,.followings_dets{
     height: 300px;
     margin: 21px;
     display: flex;
@@ -143,7 +143,9 @@ body {
     justify-content: space-evenly;
     text-align: center;
 }
-
+.follows_dets,.followings_dets{
+    padding: 15px;
+}
 /*Mobile responsiveness*/
 @media screen and (max-width:768px) {
     .outputContainer .outputs{
@@ -160,10 +162,17 @@ body {
         max-height: 150px;
         max-width: 150px;
     }
-    .repo_details, .follows_dets{
+    .repo_details, .follows_dets,.followings_dets{
         height: 400px;
     }
+    .follows_dets, .followings_dets{
+        padding: 3px;
+    }
+    .follows{
+        height: 125px;
+    }
 }
+
 
 /*nav{
     position: fixed;

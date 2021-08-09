@@ -140,15 +140,15 @@
       border-radius: 25px;
     }
     
-    .repo_details::-webkit-scrollbar, .follows_dets::-webkit-scrollbar {
+    .repo_details::-webkit-scrollbar, .follows_dets::-webkit-scrollbar, .followings_dets::-webkit-scrollbar {
         width: 20px; 
      }
     
-    .repo_details::-webkit-scrollbar-track,.follows_dets::-webkit-scrollbar-track {
+    .repo_details::-webkit-scrollbar-track,.follows_dets::-webkit-scrollbar-track,  .followings_dets::-webkit-scrollbar-track{
       background-color: black;
     }
     
-    .repo_details::-webkit-scrollbar-thumb,.follows_dets::-webkit-scrollbar-thumb {
+    .repo_details::-webkit-scrollbar-thumb,.follows_dets::-webkit-scrollbar-thumb, .followings_dets::-webkit-scrollbar-thumb {
       background: #4e4e4e;
       border-radius: 25px;
     }
