@@ -7,9 +7,16 @@
 
 ## Completed Tasks
 - Design
+- Special Case Scenario 
+  - Empty Input ✔️
 
 ## Yet to Add
 - Functionality and response for each separate scenarios
+  - If No User Is Found ❌
+  - If User Has No Followers ❌
+  - If User Has No Followings ❌
+  - Linking to the Followers/ Users Page ❌
+  - Linking to Following Pepe Page ❌
 
 ## Collaborators
 - [Osiris](https://github.com/PrivyLabs) 
