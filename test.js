@@ -69,11 +69,11 @@ document.addEventListener("DOMContentLoaded",function(){
                             <p class="bios" id="bios"> Bio&nbsp;: &nbsp; <q>${content.bio}</q></p>
                         `
                     }
-                    //Display Followers and Following List
+                    //Display Followers
                     console.log(content1)
-                    console.log(content2)
                     let followers = document.getElementById("follows_dets")
                     let follow_lis = ""
+                    //no follower case
                     for(let i=0;i<content1.length;i++){
                         follow_lis += `
                         <div class="follows">
@@ -88,6 +88,24 @@ document.addEventListener("DOMContentLoaded",function(){
                     }
                     followers.innerHTML=follow_lis
 
+                    //Display the following list
+                    console.log(content2)
+                    let following = document.getElementById("followings_dets")
+                    let followin_lis = ""
+                    //no following case
+                    for(i=0;i<content2.length;i++){
+                        followin_lis+=`
+                        <div class="follows">
+                            <div class="followImage" style="display: block; margin: auto;margin-right: 10px;">
+                                <img class="images2" src=${content2[i].avatar_url} alt="username logo">
+                            </div>                            
+                            <div class="followUsernam">
+                                <p>${content2[i].login}</p>
+                            </div>
+                        </div>
+                        `
+                    }
+                    following.innerHTML = followin_lis
                 })
             })
         })

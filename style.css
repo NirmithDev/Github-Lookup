@@ -126,7 +126,7 @@ body {
     width: 350px;
     background-color: #ff000030;
     height: 115px;
-    padding: 20px;
+    padding-top: 15px;
     border-radius: 10px 0;
     margin: 10px;
     transition: 2s;
