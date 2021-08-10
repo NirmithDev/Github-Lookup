@@ -69,6 +69,25 @@ document.addEventListener("DOMContentLoaded",function(){
                             <p class="bios" id="bios"> Bio&nbsp;: &nbsp; <q>${content.bio}</q></p>
                         `
                     }
+                    //Display Followers and Following List
+                    console.log(content1)
+                    console.log(content2)
+                    let followers = document.getElementById("follows_dets")
+                    let follow_lis = ""
+                    for(let i=0;i<content1.length;i++){
+                        follow_lis += `
+                        <div class="follows">
+                            <div class="followImage" style="display: block; margin: auto;margin-right: 10px;">
+                                <img class="images2" src=${content1[i].avatar_url} alt="username logo">
+                            </div>                            
+                            <div class="followUsernam">
+                                <p>${content1[i].login}</p>
+                            </div>
+                        </div>
+                    `
+                    }
+                    followers.innerHTML=follow_lis
+
                 })
             })
         })
@@ -76,24 +95,9 @@ document.addEventListener("DOMContentLoaded",function(){
         fetch(`https://gh-pinned-repos-5l2i19um3.vercel.app/?username=${c.value}`).then(res => res.json()).then((content)=>{
             console.log(content)
             console.log(content.length)
-        /*  <div class="item">
-                <div class="repo_name">Repo Name</div>
-                <!--Number of stars and forks make it clickable to the repo link-->
-                <div style="padding: 20px;display: flex;justify-content: space-evenly;">
-                    <!--Stars-->
-                    <div class="star" style="padding: 10px;">
-                        <i class="far fa-star"></i>45
-                    </div>
-                    <!--Forks-->
-                    <div class="fork"  style="padding: 10px;">
-                        <i class="fas fa-code-branch"></i>24
-                    </div>
-                </div>
-            </div>
-            */
-           let pinnedRepo=document.getElementById("repo_details")
-           let pinnedRepo_Out=""
-           for(let i=0;i<content.length;i++){
+            let pinnedRepo=document.getElementById("repo_details")
+            let pinnedRepo_Out=""
+            for(let i=0;i<content.length;i++){
                 pinnedRepo_Out+=`
                 <div class="item">
                     <div class="repo_name">${content[i].repo}</div>

@@ -144,9 +144,8 @@ body {
 
 .follows{
     width: 397px;
-    height: 128px;
+    height: 150px;
     padding: 10px;
-    display: flex;
     justify-content: space-evenly;
     text-align: center;
 }
@@ -181,7 +180,7 @@ body {
         padding: 3px;
     }
     .follows{
-        height: 125px;
+        height: 145px;
     }
     .item{
         height: 115px;
