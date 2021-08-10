@@ -130,6 +130,7 @@ body {
     border-radius: 10px 0;
     margin: 10px;
     transition: 2s;
+    overflow-y: auto;
 }
 .item:hover{
     background-color: rgb(158, 0, 0);
@@ -151,6 +152,11 @@ body {
 }
 .follows_dets,.followings_dets{
     padding: 15px;
+}
+#brah{
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
 }
 /*Mobile responsiveness*/
 @media screen and (max-width:768px) {
@@ -176,6 +182,12 @@ body {
     }
     .follows{
         height: 125px;
+    }
+    .item{
+        height: 115px;
+    }
+    #brah{
+        padding: 7px;
     }
 }
 

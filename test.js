@@ -1,17 +1,6 @@
-//console.log("IT IS WORKING NIRMITH")
 //yeah this might be a bad practice
 //but if it works it works
-fetch('https://gh-pinned-repos-5l2i19um3.vercel.app/?username=NirmithVictor').then(res => res.json()).then((content2)=>{
-    //console.log(content)
-    fetch('https://api.github.com/users/NirmithVictor/followers').then(res => res.json()).then((content1)=>{
-    //console.log(content)
-        fetch('https://api.github.com/users/NirmithVictor/following').then(res => res.json()).then((content)=>{
-        console.log(content)
-        console.log(content1.length)
-        console.log(content2)
-        })
-    })
-})
+
 let b= document.getElementById("submit")
 let c=  document.getElementById("searchs")
 //load this when the document loads
@@ -84,6 +73,46 @@ document.addEventListener("DOMContentLoaded",function(){
             })
         })
         //create a fetch for the pinned repos separately
+        fetch(`https://gh-pinned-repos-5l2i19um3.vercel.app/?username=${c.value}`).then(res => res.json()).then((content)=>{
+            console.log(content)
+            console.log(content.length)
+        /*  <div class="item">
+                <div class="repo_name">Repo Name</div>
+                <!--Number of stars and forks make it clickable to the repo link-->
+                <div style="padding: 20px;display: flex;justify-content: space-evenly;">
+                    <!--Stars-->
+                    <div class="star" style="padding: 10px;">
+                        <i class="far fa-star"></i>45
+                    </div>
+                    <!--Forks-->
+                    <div class="fork"  style="padding: 10px;">
+                        <i class="fas fa-code-branch"></i>24
+                    </div>
+                </div>
+            </div>
+            */
+           let pinnedRepo=document.getElementById("repo_details")
+           let pinnedRepo_Out=""
+           for(let i=0;i<content.length;i++){
+                pinnedRepo_Out+=`
+                <div class="item">
+                    <div class="repo_name">${content[i].repo}</div>
+                    <!--Number of stars and forks make it clickable to the repo link-->
+                    <div id="brah">
+                        <!--Stars-->
+                        <div class="star" style="padding: 10px;">
+                            <i class="far fa-star"></i>${content[i].stars}
+                        </div>
+                        <!--Forks-->
+                        <div class="fork"  style="padding: 10px;">
+                            <i class="fas fa-code-branch"></i>${content[i].forks}
+                        </div>
+                    </div>
+                </div>
+                `
+            }
+            pinnedRepo.innerHTML=pinnedRepo_Out
+        })
     })
     //special case scenario
         //empty input or if user not found
