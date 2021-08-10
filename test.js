@@ -43,29 +43,6 @@ document.addEventListener("DOMContentLoaded",function(){
                     if(content.bio==null){
                         console.log("NO USER BIO")
                     }
-                    /*
-                    <div class="side right">
-                        <div class="imageContainer" style="margin-top: 15px;">
-                            <img class="images" src="https://avatars.githubusercontent.com/u/75515353?v=4" alt="username logo">
-                        </div>
-                    </div>
-                    <div class="side left">
-                      <div class="caption capt" >
-                        <!--Make the username capitalized-->
-                        <p class="username" style="color: white;">user name</p>
-                            <!--Same thing for this-->
-                            <div class="side left2">
-                                <div class="caption">
-                                        <a class="button" href="#">200 Followers</a>
-                                        
-                                </div>
-                                <div class="caption">
-                                        <a class="button" href="#">200 Following</a>
-                                </div>
-                            </div>    
-                      </div>
-                    </div>
-                    */
                    let follower_len = content1.length
                    let following_len = content2.length
                     topInfo.innerHTML = `
