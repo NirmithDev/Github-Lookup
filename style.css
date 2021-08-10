@@ -119,7 +119,7 @@ body {
 }
 
 .follows_dets,.followings_dets{
-    height: 250px;
+    height: 263px;
 }
 
 .item{
@@ -187,6 +187,9 @@ body {
     }
     #brah{
         padding: 7px;
+    }
+    #stuff{
+        font-size: 20px;
     }
 }
 

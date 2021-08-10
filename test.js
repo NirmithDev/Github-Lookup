@@ -36,8 +36,56 @@ function emptyInput(){
     a1.innerHTML =`<p class="bios" id="bios"> Bio&nbsp;: &nbsp; <q>NO BIO</q></p>`
 
     //Pinned repos
+    let a2= document.getElementById("repo_details")
+    a2.innerHTML = `
+    <div id="out" >
+        <div class="containe">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+        </div>
+    </div>
+    <div id="stuff">
+        <p>THERE IS NO PINNED REPOS</p>
+    </div> 
+    `
+    //follwings
+    let a3= document.getElementById("followings_dets")
+    a3.innerHTML = `
+    <div id="out" >
+        <div class="containe">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+        </div>
+    </div>
+    <div id="stuff">
+        <p>NO FOLLOWING</p>
+    </div>
+    `
     //Followers
-    //Following
+    let a4= document.getElementById("follows_dets")
+    a4.innerHTML = `
+    <div id="out" >
+        <div class="containe">
+            <div class="box box1"></div>
+            <div class="box box2"></div>
+            <div class="box box3"></div>
+            <div class="box box4"></div>
+        </div>
+    </div>
+    <div id="stuff">
+        <p>THERE IS NO FOLLOWERS</p>
+    </div>
+    `
+
+}
+
+function emptyFollowers(){
+    //Followers
+    let 
 }
 
 //load this when the document loads
@@ -175,8 +223,7 @@ document.addEventListener("DOMContentLoaded",function(){
         }
         else{
             emptyInput()
+            //emptyFollowers()
         }
     })
-    //special case scenario
-        //empty input or if user not found
 })

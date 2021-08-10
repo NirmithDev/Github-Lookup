@@ -93,6 +93,44 @@
   background-color: red;
 }
 
+#out{
+	display: flex;
+  margin: auto 0 auto auto;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+#out .containe{
+	width: 100px;
+	margin: 70px 70px 70px 70px;
+}
+
+
+.box{
+	width: 40px;
+	height: 40px;
+	background-color: #008cbc;
+	display: inline-block;
+	animation: pulse 0.6s ease-in infinite alternate;
+}
+.box2, .box3{
+	animation-delay: 0.6s;
+}
+
+@Keyframes pulse{
+	100%{
+		opacity: 0;
+	}
+}
+#stuff{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 @media screen and (min-width:1200px) {
       .wrapper {
             display: flex;
@@ -191,6 +229,9 @@
       .wrapper .right{
         height: 200px;
       }
+      #stuff{
+        font-size: 20px;
+    }
       .capt{
           margin-bottom: 20px;
       }
