@@ -85,7 +85,7 @@
 .follows{
   background-color: #ff000030;
   border-radius: 10px 0px;
-  margin-top: 20px;
+  margin: 10px;
   transition: 2s;
 }
 

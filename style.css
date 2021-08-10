@@ -83,6 +83,8 @@ body {
 .username{
     font-size: 40px;
     text-transform: uppercase;
+    word-break: break-all;
+    letter-spacing: 6px;
 }
 
 .images{
@@ -140,8 +142,8 @@ body {
 }
 
 .follows{
-    width: 300px;
-    height: 147px;
+    width: 397px;
+    height: 128px;
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
@@ -160,7 +162,7 @@ body {
         margin-top: 12px;
     }
     .username{
-        font-size: 41px;
+        font-size: 26px;
     }
     .images{
         max-height: 150px;
