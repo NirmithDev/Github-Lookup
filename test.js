@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded",function(){
                             if(content1.length>0){
                             for(let i=0;i<content1.length;i++){
                                 follow_lis += `
-                                    <a href=${content1.html_url} style="text-decoration:none;color:white;" target="_blank">
+                                    <a href=${content1[i].html_url} style="text-decoration:none;color:white;" target="_blank">
                                         <div class="follows">
                                             <div class="followImage" style="display: block; margin: auto;margin-right: 10px;">
                                                 <img class="images2" src=${content1[i].avatar_url} alt="username logo">
