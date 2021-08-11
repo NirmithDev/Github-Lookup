@@ -14,14 +14,15 @@
   - If User Has No Followings ✔️
   - Linking to the main User page ✔️
   - Linking for the pinned repos ✔️
+  - Linking to the Followers/ Users Page ✔️
+  - Linking to Following Pepe Github Page ✔️
 
 ## Yet to Add
 - Functionality and response for each separate scenarios
-  - Linking to the Followers/ Users Page ❌
-  - Linking to Following Pepe Github Page ❌
+  - Footer ❌  
 
 ## Known Issue
-- I have no idea how to get the authenticated one
+- I have no idea how to get the authenticated one for repeated calls 
 - You can use it on yours but no promises
 
 ## Collaborators
