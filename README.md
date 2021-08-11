@@ -3,8 +3,8 @@
 
 ## The Plan
 <p float="left">
-  <img src="https://github.com/NirmithVictor/Github-Lookup/blob/main/Output_Default.png" width="300" height="100"/>
-  <img src="https://github.com/NirmithVictor/Github-Lookup/blob/main/Output_User.png" width="300" height="100" />
+  <img src="https://github.com/NirmithVictor/Github-Lookup/blob/main/Output_Default.png" width="300" height="250"/>
+  <img src="https://github.com/NirmithVictor/Github-Lookup/blob/main/Output_User.png" width="300" height="250" />
 </p>
 
 ## Completed Tasks
