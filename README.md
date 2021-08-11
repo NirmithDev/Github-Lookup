@@ -2,7 +2,10 @@
 
 
 ## The Plan
- ![Mobile Disp Output](https://github.com/NirmithVictor/Github-Lookup/blob/main/Output_Default.png) | ![User Mobile side](https://github.com/NirmithVictor/Github-Lookup/blob/main/Output_User.png)
+<p float="left">
+  <img src="https://github.com/NirmithVictor/Github-Lookup/blob/main/Output_Default.png" width="100" />
+  <img src="https://github.com/NirmithVictor/Github-Lookup/blob/main/Output_User.png" width="100" />
+</p>
 
 ## Completed Tasks
 - Design
