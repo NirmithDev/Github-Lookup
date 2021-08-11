@@ -149,14 +149,16 @@ document.addEventListener("DOMContentLoaded",function(){
                             if(content1.length>0){
                             for(let i=0;i<content1.length;i++){
                                 follow_lis += `
-                                    <div class="follows">
-                                        <div class="followImage" style="display: block; margin: auto;margin-right: 10px;">
-                                            <img class="images2" src=${content1[i].avatar_url} alt="username logo">
-                                        </div>                            
-                                        <div class="followUsernam">
-                                            <p>${content1[i].login}</p>
+                                    <a href=${content1.html_url} style="text-decoration:none;color:white;" target="_blank">
+                                        <div class="follows">
+                                            <div class="followImage" style="display: block; margin: auto;margin-right: 10px;">
+                                                <img class="images2" src=${content1[i].avatar_url} alt="username logo">
+                                            </div>                            
+                                            <div class="followUsernam">
+                                                <p>${content1[i].login}</p>
+                                            </div>
                                         </div>
-                                    </div>
+                                    </a>
                                 `
                             }
                             followers.innerHTML=follow_lis
@@ -186,6 +188,7 @@ document.addEventListener("DOMContentLoaded",function(){
                             if(following_len>0){
                             for(i=0;i<content2.length;i++){
                                 followin_lis+=`
+                                <a target="_blank" href=${content2[i].html_url} style="text-decoration:none;color:white;">
                                     <div class="follows">
                                         <div class="followImage" style="display: block; margin: auto;margin-right: 10px;">
                                             <img class="images2" src=${content2[i].avatar_url} alt="username logo">
@@ -194,6 +197,7 @@ document.addEventListener("DOMContentLoaded",function(){
                                             <p>${content2[i].login}</p>
                                         </div>
                                     </div>
+                                </a>
                                 `
                             }
                                 following.innerHTML = followin_lis
@@ -233,20 +237,22 @@ document.addEventListener("DOMContentLoaded",function(){
                     let pinnedRepo_Out=""
                     for(let i=0;i<content.length;i++){
                         pinnedRepo_Out+=`
-                        <div class="item">
-                            <div class="repo_name">${content[i].repo}</div>
-                            <!--Number of stars and forks make it clickable to the repo link-->
-                            <div id="brah">
-                                <!--Stars-->
-                                <div class="star" style="padding: 10px;">
-                                    <i class="far fa-star"></i>${content[i].stars}
-                                </div>
-                                <!--Forks-->
-                                <div class="fork"  style="padding: 10px;">
-                                    <i class="fas fa-code-branch"></i>${content[i].forks}
+                        <a target="_blank" href=${content[i].link} style="text-decoration:none;color:white;">
+                            <div class="item">
+                                <div class="repo_name">${content[i].repo}</div>
+                                <!--Number of stars and forks make it clickable to the repo link-->
+                                <div id="brah">
+                                    <!--Stars-->
+                                    <div class="star" style="padding: 10px;">
+                                        <i class="far fa-star"></i>${content[i].stars}
+                                    </div>
+                                    <!--Forks-->
+                                    <div class="fork"  style="padding: 10px;">
+                                        <i class="fas fa-code-branch"></i>${content[i].forks}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                         `
                     }
                     pinnedRepo.innerHTML=pinnedRepo_Out
