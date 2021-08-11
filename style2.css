@@ -90,7 +90,7 @@
 }
 
 .follows:hover{
-  background-color: red;
+  background-color: rgb(158, 0, 0);
 }
 
 #out{
@@ -219,6 +219,9 @@
 @media screen and (max-width:768px){
     .outputs{
         overflow-x: auto;
+    }
+    .box{
+      width: 36px;
     }
       .left2{
             flex-direction: column;

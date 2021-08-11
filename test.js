@@ -94,23 +94,14 @@ document.addEventListener("DOMContentLoaded",function(){
         if(c.value!=""){
             //after taking in the searched name create api call to get the searched username detaisl
             fetch(`https://api.github.com/users/${c.value}`).then(res=>res.json()).then((content)=>{
-                //console.log(content)
-                //console.log(content)
                 fetch(`https://api.github.com/users/${c.value}/followers`).then(res => res.json()).then((content1)=>{
-                //console.log(content)
                     fetch(`https://api.github.com/users/${c.value}/following`).then(res => res.json()).then((content2)=>{
-                        //console.log(content1.length)
-          //              console.log(content)
+                        console.log(content)
                         if(content.message!="Not Found"){
-            //                console.log(content1.length)
-              //              console.log(content2.length)
                             //get the name
-                //            console.log(content.login)
-                  //          console.log(content.avatar_url)
                             //append this to the front end
                             let topInfo = document.getElementById("wrape")
                             //add the username
-                    //        console.log(content.bio)
                             let follower_len = content1.length
                             let following_len = content2.length
                             topInfo.innerHTML = `
@@ -122,14 +113,16 @@ document.addEventListener("DOMContentLoaded",function(){
                             <div class="side left">
                                 <div class="caption capt" >
                                 <!--Make the username capitalized-->
-                                <p class="username" style="color: white;">${content.login}</p>
+                                    <a target=_blank style="text-decoration: none;" href=${content.html_url}>
+                                        <p class="username" style="color: white;">${content.login}</p>
+                                    </a>
                                     <!--Same thing for this-->
                                     <div class="side left2">
                                         <div class="caption">
-                                            <a class="button" href="#">${follower_len} Followers</a>
+                                            <a>${follower_len} Followers</a>
                                         </div>
                                         <div class="caption">
-                                            <a class="button" href="#">${following_len} Following</a>
+                                            <a>${following_len} Following</a>
                                         </div>
                                     </div>    
                                 </div>
