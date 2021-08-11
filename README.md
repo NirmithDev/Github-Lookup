@@ -2,7 +2,7 @@
 
 
 ## The Plan
- ![Final Output](https://github.com/NirmithVictor/Github-Lookup/blob/main/plan.png)
+ ![Mobile Disp Output](https://github.com/NirmithVictor/Github-Lookup/blob/main/Output_Default.png)
 
 
 ## Completed Tasks
@@ -12,11 +12,16 @@
   - If No User Is Found ✔️
   - If User Has No Followers ✔️
   - If User Has No Followings ✔️
+  - Linking to the main User page ✔️
 
 ## Yet to Add
 - Functionality and response for each separate scenarios
   - Linking to the Followers/ Users Page ❌
   - Linking to Following Pepe Github Page ❌
+
+## Known Issue
+- I have no idea how to get the authenticated one
+- You can use it on yours but no promises
 
 ## Collaborators
 - [Osiris](https://github.com/PrivyLabs) 
