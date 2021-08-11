@@ -3,7 +3,7 @@
 
 ## The Plan
  ![Mobile Disp Output](https://github.com/NirmithVictor/Github-Lookup/blob/main/Output_Default.png)
-
+ ![User Mobile side](https://github.com/NirmithVictor/Github-Lookup/blob/main/Output_User.png)
 
 ## Completed Tasks
 - Design
