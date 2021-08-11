@@ -47,7 +47,7 @@ function emptyInput(){
         </div>
     </div>
     <div id="stuff">
-        <p>THERE IS NO PINNED REPOS</p>
+        <p>NO PINNED REPOS</p>
     </div> 
     `
     //follwings
@@ -77,7 +77,7 @@ function emptyInput(){
         </div>
     </div>
     <div id="stuff">
-        <p>THERE IS NO FOLLOWERS</p>
+        <p>NO FOLLOWERS</p>
     </div>
     `
 
