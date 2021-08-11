@@ -13,6 +13,7 @@
   - If User Has No Followers ✔️
   - If User Has No Followings ✔️
   - Linking to the main User page ✔️
+  - Linking for the pinned repos ✔️
 
 ## Yet to Add
 - Functionality and response for each separate scenarios
