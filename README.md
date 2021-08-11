@@ -9,14 +9,14 @@
 - Design
 - Special Case Scenario 
   - Empty Input ✔️
+  - If No User Is Found ✔️
+  - If User Has No Followers ✔️
+  - If User Has No Followings ✔️
 
 ## Yet to Add
 - Functionality and response for each separate scenarios
-  - If No User Is Found ❌
-  - If User Has No Followers ❌
-  - If User Has No Followings ❌
   - Linking to the Followers/ Users Page ❌
-  - Linking to Following Pepe Page ❌
+  - Linking to Following Pepe Github Page ❌
 
 ## Collaborators
 - [Osiris](https://github.com/PrivyLabs) 
