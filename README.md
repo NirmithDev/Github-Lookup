@@ -18,10 +18,11 @@
   - Linking for the pinned repos ✔️
   - Linking to the Followers/ Users Page ✔️
   - Linking to Following Pepe Github Page ✔️
+  - Footer ✔️
 
 ## Yet to Add
 - Functionality and response for each separate scenarios
-  - Footer ❌  
+  -  
 
 ## Known Issue
 - I have no idea how to get the authenticated one for repeated calls 
